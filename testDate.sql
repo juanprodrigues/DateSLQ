@@ -1,6 +1,6 @@
 create database testDate;
 CREATE TABLE testAllDate (
-    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
      `date` date NULL,
       `datetime` datetime NULL,
        `time` time NULL,
@@ -10,5 +10,5 @@ CREATE TABLE testAllDate (
 
 
 
-INSERT INTO `testDate`.`testAllDate` (`customer_id`, `date`, `datetime`, `time`, `timestamp`, `year`)
+INSERT INTO `testDate`.`testAllDate` (`id`, `date`, `datetime`, `time`, `timestamp`, `year`)
 VALUES ('1', '2020-12-12', '2020-12-12 00:00:00', '12:12:00', '2020-12-12 00:00:00', 2020);
