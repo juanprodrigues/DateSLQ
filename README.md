@@ -39,6 +39,8 @@ Year: 1 byte
 Almacena un año. El rango de valores permitidos va desde el año 1901 al año 2155. El campo puede tener tamaño dos o tamaño 4 
 dependiendo de si queremos almacenar el año con dos o cuatro dígitos.
 
-## Diferencia entre datetime y timeStamm
+## Diferencia entre datetime y timeStamp
 
-MySQL convierte TIMESTAMP los valores de la zona horaria actual a UTC para el almacenamiento y de vuelta de UTC a la zona horaria actual para la recuperación. (Esto no ocurre con otros tipos como DATETIME.) De forma predeterminada, la zona horaria actual para cada conexión es la hora del servidor. La zona horaria se puede configurar por conexión. Siempre que la configuración de la zona horaria permanezca constante, obtendrá el mismo valor que almacenó. Si almacena un TIMESTAMP valor y luego cambia la zona horaria y recupera el valor, el valor recuperado es diferente del valor que almacenó. Esto ocurre porque no se utilizó la misma zona horaria para la conversión en ambas direcciones. La zona horaria actual está disponible como el valor de latime_zone variable del sistema
+ MySQL convierte TIMESTAMP los valores de la zona horaria actual a UTC para el almacenamiento y de vuelta de UTC a la zona horaria actual para la recuperación. (Esto no ocurre con otros tipos como DATETIME.) De forma predeterminada, la zona horaria actual para cada conexión es la hora del servidor. La zona horaria se puede configurar por conexión. 
+
+ Siempre que la configuración de la zona horaria permanezca constante, obtendrá el mismo valor que almacenó. Si almacena un TIMESTAMP valor y luego cambia la zona horaria y recupera el valor, el valor recuperado es diferente del valor que almacenó. Esto ocurre porque no se utilizó la misma zona horaria para la conversión en ambas direcciones. La zona horaria actual está disponible como el valor de latime_zone variable del sistema
