@@ -10,5 +10,5 @@ CREATE TABLE testAllDate (
 
 
 
-INSERT INTO `pe`.`customerstime` (`customer_id`, `date`, `datetime`, `time`, `timestamp`, `year`)
+INSERT INTO `testDate`.`testAllDate` (`customer_id`, `date`, `datetime`, `time`, `timestamp`, `year`)
 VALUES ('1', '2020-12-12', '2020-12-12 00:00:00', '12:12:00', '2020-12-12 00:00:00', 2020);
